@@ -4,9 +4,9 @@ import { router } from './Routers/Routers';
 
 function App() {
   return (
-    <RouterProvider router={router}>
-
-    </RouterProvider>
+    <div className='max-w-[1440px] mx-auto container'>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 

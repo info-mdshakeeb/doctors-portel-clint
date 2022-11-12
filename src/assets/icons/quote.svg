@@ -1,1 +1,16 @@
-<svg id="Capa_1" enable-background="new 0 0 409.294 409.294" height="512" viewBox="0 0 409.294 409.294" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m233.882 29.235v175.412h116.941c0 64.48-52.461 116.941-116.941 116.941v58.471c96.728 0 175.412-78.684 175.412-175.412v-175.412z"/><path d="m0 204.647h116.941c0 64.48-52.461 116.941-116.941 116.941v58.471c96.728 0 175.412-78.684 175.412-175.412v-175.412h-175.412z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="366" height="299"
+    viewBox="0 0 366 299">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_26" data-name="Rectangle 26" width="366" height="299" transform="translate(-1717 6116)"
+                fill="#fff" />
+        </clipPath>
+    </defs>
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(1717 -6116)" opacity="0.203"
+        clip-path="url(#clip-path)">
+        <text id="_" data-name="“" transform="translate(-1764 6784)" fill="#3cd4d5" font-size="916"
+            font-family="Arial-BoldMT, Arial" font-weight="700">
+            <tspan x="0" y="0">“</tspan>
+        </text>
+    </g>
+</svg>
