@@ -1,10 +1,12 @@
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import ApoinmentBanner from './ApoinmentBanner';
+import Model from './Model';
 
 const Appionment = () => {
     const [selectedDate, setSelectedDate] = useState(new Date())
     const [apoinmentOprtions, setApoinmentOprtions] = useState([])
+    const [moduleinfo, setModuleinfo] = useState(null);
 
     useEffect(() => {
         fetch('appointmentOptions.json')
@@ -28,8 +30,20 @@ const Appionment = () => {
                                 <h2 className="card-title">{apoinmentOprtion.name}</h2>
                                 <p>{apoinmentOprtion.slots.length > 0 ? apoinmentOprtion.slots[0] : "try another day"}</p>
                                 <p>{apoinmentOprtion.slots.length} {apoinmentOprtion.slots.length > 1 ? "spaces" : "space"} Available</p>
-                                <label htmlFor="my-modal-3" className="btn">book now</label>
+                                <label
+                                    htmlFor="booking-model"
+                                    className="btn btn-primary"
+                                    onClick={() => setModuleinfo(apoinmentOprtion)}>book now</label>
                             </div>
+                            {moduleinfo &&
+                                <Model
+                                    key={apoinmentOprtion._id}
+                                    id={"booking-model"}
+                                    selectedDate={selectedDate}
+                                    moduleinfo={moduleinfo}
+                                    setModuleinfo={setModuleinfo}
+                                />
+                            }
                         </div>
                     )
                 }
