@@ -4,8 +4,8 @@ import chair from '../../assets/images/chair.png';
 
 const Banner = () => {
     return (
-        <div className='mx-5'>
-            <div style={{ backgroundImage: `url(${bg})` }} className="hero bg-base-100 lg:p-20">
+        <div className=''>
+            <div style={{ backgroundImage: `url(${bg})` }} className="bg-base-100 lg:p-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={chair} className="md:w-1/2 rounded-lg shadow-2xl" alt='' />
                     <div className=''>
